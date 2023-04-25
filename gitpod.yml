@@ -1,0 +1,10 @@
+image:
+  name: python:3.9
+
+tasks:
+  - name: Install dependencies
+    command: |
+      pip install -r requirements.txt
+
+  - name: Start the application
+    command: python app.py
