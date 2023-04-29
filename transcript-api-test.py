@@ -21,13 +21,14 @@ class TernaFormatter(Formatter):
         return '|\n|'.join([self.format_transcript(transcript, **kwargs) for transcript in transcripts])
 
 # Ingresa aquí la ID del video de YouTube
-video_id = 'PHr8xPBhHJU'
+video_id = 'PbW-1k3ZOA4'
+#video_id = 'PHr8xPBhHJU'
 
 # Obtiene la transcripción del video de YouTube
 transcript_languages = YouTubeTranscriptApi.list_transcripts(video_id)
 #print(transcript_languages)
 
-transcript = YouTubeTranscriptApi.get_transcript(video_id, languages=['es'], preserve_formatting=True)
+transcript = YouTubeTranscriptApi.get_transcript(video_id, languages=['es','en'], preserve_formatting=True)
 
 # Crea una instancia del formateador de texto
 formatter = TernaFormatter()
