@@ -2,7 +2,7 @@ import PyPDF2
 import openai
 
 # Configuración de la API de OpenAI
-openai.api_key = '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'
+openai.api_key = ''
 model = 'gpt-3.5-turbo'
 
 # Leer el archivo PDF y extraer el texto
